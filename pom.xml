@@ -33,19 +33,15 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
-<!--                    <checkModificationExcludes>-->
-<!--                        <checkModificationExclude>pom.xml</checkModificationExclude>-->
-<!--                    </checkModificationExcludes>-->
+                    <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
+                    </checkModificationExcludes>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-<!--    <scm>-->
-<!--        <developerConnection>scm:git:git@github.com:geodan89/geo-pet-clinic-2.git</developerConnection>-->
-<!--    </scm>-->
+    <scm>
+        <developerConnection>scm:git:git@github.com:geodan89/geo-pet-clinic-2.git</developerConnection>
+    </scm>
 
-
-  <scm>
-    <tag>geo-pet-clinic-2-1</tag>
-  </scm>
 </project>
