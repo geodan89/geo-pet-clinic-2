@@ -17,7 +17,7 @@
     </parent>
     <groupId>geo.springframework</groupId>
     <artifactId>geo-pet-clinic-2</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>geo-pet-clinic-2</name>
     <description>Geo Pet Clinic 2</description>
 
@@ -48,7 +48,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:geodan89/geo-pet-clinic-2.git</developerConnection>
-    <tag>geo-pet-clinic-2-0.0.2</tag>
+    <tag>geo-pet-clinic-2-0.0.1</tag>
     </scm>
 
 </project>
