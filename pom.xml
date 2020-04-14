@@ -2,20 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-<!--    <groupId>geo.springframework</groupId>-->
-<!--    <artifactId>geo-pet-clinic-2</artifactId>-->
-<!--    <version>0.0.1-SNAPSHOT</version>-->
-
-<!--    <packaging>pom</packaging>-->
     <modules>
         <module>pet-clinic-2-data</module>
         <module>pet-clinic-2-web</module>
     </modules>
 
     <packaging>pom</packaging>
-
-<!--    <name>geo-pet-clinic-2</name>-->
-<!--    <description>Geo Pet Clinic Project</description>-->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -54,6 +46,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:geodan89/geo-pet-clinic-2.git</developerConnection>
+    <tag>geo-pet-clinic-2-0.0.1</tag>
     </scm>
 
 </project>
