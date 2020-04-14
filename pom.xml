@@ -54,7 +54,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:geodan89/geo-pet-clinic-2.git</developerConnection>
-        <tag>geo-pet-clinic-2-0.0.1</tag>
-    </scm>
+      <tag>geo-pet-clinic-2-0.0.1</tag>
+  </scm>
 
 </project>
