@@ -17,7 +17,7 @@
     </parent>
     <groupId>geo.springframework</groupId>
     <artifactId>geo-pet-clinic-2</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>geo-pet-clinic-2</name>
     <description>Geo Pet Clinic 2</description>
 
@@ -39,6 +39,8 @@
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
+                        <checkModificationExclude>pet-clinic-2-data/pom.xml</checkModificationExclude>
+                        <checkModificationExclude>pet-clinic-2-web/pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
                 </configuration>
             </plugin>
@@ -46,7 +48,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:geodan89/geo-pet-clinic-2.git</developerConnection>
-    <tag>geo-pet-clinic-2-0.0.1</tag>
+    <tag>geo-pet-clinic-2-0.0.2</tag>
     </scm>
 
 </project>
