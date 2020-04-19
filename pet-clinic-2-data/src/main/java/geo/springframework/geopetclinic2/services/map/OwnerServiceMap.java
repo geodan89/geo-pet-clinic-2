@@ -1,11 +1,11 @@
 package geo.springframework.geopetclinic2.services.map;
 
 import geo.springframework.geopetclinic2.model.Owner;
-import geo.springframework.geopetclinic2.services.CrudService;
+import geo.springframework.geopetclinic2.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll(){
@@ -32,4 +32,8 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
         super.deleteById(id);
     }
 
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 }
