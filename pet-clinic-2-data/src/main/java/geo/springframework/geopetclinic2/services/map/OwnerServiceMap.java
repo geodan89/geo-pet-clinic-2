@@ -2,9 +2,11 @@ package geo.springframework.geopetclinic2.services.map;
 
 import geo.springframework.geopetclinic2.model.Owner;
 import geo.springframework.geopetclinic2.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
