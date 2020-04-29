@@ -1,10 +1,7 @@
 package geo.springframework.geopetclinic2.bootstrap;
 
 import geo.springframework.geopetclinic2.model.*;
-import geo.springframework.geopetclinic2.services.OwnerService;
-import geo.springframework.geopetclinic2.services.PetTypeService;
-import geo.springframework.geopetclinic2.services.SpecialtiesService;
-import geo.springframework.geopetclinic2.services.VetService;
+import geo.springframework.geopetclinic2.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,12 +14,14 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialtiesService specialtiesService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtiesService specialtiesService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialtiesService specialtiesService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialtiesService = specialtiesService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -80,6 +79,7 @@ public class DataLoader implements CommandLineRunner {
         owner2.setTelephone("123455");
         ownerService.save(owner2);
 
+
         Pet fionasPet = new Pet();
         fionasPet.setPetType(savedCatPetType);
         fionasPet.setOwner(owner2);
@@ -87,6 +87,11 @@ public class DataLoader implements CommandLineRunner {
         fionasPet.setName("Cat");
         owner2.getPets().add(fionasPet);
 
+        Visit catVisit = new Visit();
+        catVisit.setPet(fionasPet);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("sneezy cat");
+        visitService.save(catVisit);
 
         System.out.println("Loaded Owners....");
 
