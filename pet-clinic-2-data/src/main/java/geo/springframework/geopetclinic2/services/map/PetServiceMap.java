@@ -2,11 +2,13 @@ package geo.springframework.geopetclinic2.services.map;
 
 import geo.springframework.geopetclinic2.model.Pet;
 import geo.springframework.geopetclinic2.services.PetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {

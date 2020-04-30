@@ -23,8 +23,8 @@ public class Pet extends BaseEntity{
     @Column(name = "birth_date")
     private LocalDate birthDate;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet") //cascade = if we delete a pet all its visits will be deleted.
-    private Set<Visit> visitSet = new HashSet<>();
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet")
+    private Set<Visit> visits = new HashSet<>();
 
     public String getName() {
         return name;
@@ -59,10 +59,10 @@ public class Pet extends BaseEntity{
     }
 
     public Set<Visit> getVisitSet() {
-        return visitSet;
+        return visits;
     }
 
     public void setVisitSet(Set<Visit> visitSet) {
-        this.visitSet = visitSet;
+        this.visits = visitSet;
     }
 }
